@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.natasaandzic.justjava.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:autofillHints="@string/name"
+            android:hint="@string/name"
+            android:inputType="textCapWords"
+            style="@style/EditTextStyle" />
+
+        <TextView
+            android:id="@+id/toppingsLabel"
+            style="@style/HeaderTextStyle"
+            android:layout_below="@+id/nameEt"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/soyMilkCb"
+            style="@style/ToppingsTextStyle"
+            android:layout_below="@id/toppingsLabel"
+            android:text="@string/soy_milk" />
+
+        <CheckBox
+            android:id="@+id/chocolateCb"
+            style="@style/ToppingsTextStyle"
+            android:layout_below="@id/soyMilkCb"
+            android:layout_marginTop="5dp"
+            android:text="@string/chocolate" />
+
+        <TextView
+            android:id="@+id/quantityLabel"
+            style="@style/HeaderTextStyle"
+            android:layout_below="@id/chocolateCb"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:id="@+id/quantityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/quantityLabel"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrementBtn"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:text="@string/minus" />
+
+            <TextView
+                android:id="@+id/quantityNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/zero"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/incrementBtn"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/plus" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderSummaryLabel"
+            style="@style/HeaderTextStyle"
+            android:layout_below="@+id/quantityLayout"
+            android:text="@string/order_summary" />
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_below="@+id/orderSummaryLabel"
+            android:text="@string/zero"
+            style="@style/PriceStyle" />
+
+        <TextView
+            android:id="@+id/currencyTv"
+            android:layout_below="@+id/orderSummaryLabel"
+            android:layout_toEndOf="@id/priceTv"
+            style="@style/PriceStyle"
+            android:text="@string/rsd" />
+
+        <Button
+            android:id="@+id/orderBtn"
+            android:text="@string/order"
+            style="@style/OrderButtonStyle" />
+
+    </RelativeLayout>
+
+</ScrollView>
