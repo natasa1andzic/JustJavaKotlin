@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop-JustJava.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop-JustJava.iml" group="JustJava" />
-      <module fileurl="file://$PROJECT_DIR$/JustJava.iml" filepath="$PROJECT_DIR$/JustJava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustJava-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustJava-app.iml" group="JustJava/app" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JustJavaKotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/JustJavaKotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustJavaKotlin.app.unitTest.iml" />
     </modules>
   </component>
 </project>
